@@ -30,3 +30,15 @@ Output format: _Send it to where it needs to go_
     `-> conditions should be placed on it because some lines may be just raw log, others might be pretty formats
   `-> For search indexes we might need to prepare the object with what is searchable/keywords/untokenized etc
 ```
+
+# References
+- `through` - https://github.com/dominictarr/through
+- `transform-stream` - https://github.com/Raynos/transform-stream
+
+# Possible Usages
+```JavaScript
+cutwoood
+    .stdin()
+    .remove()
+    .transform(//)
+```

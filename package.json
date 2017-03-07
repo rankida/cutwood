@@ -4,7 +4,9 @@
   "description": "Yet another logger",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "semistandard .",
+    "test": "semistandard . && lab --a code",
+    "test-watch": "nodemon --exec lab --a code"
   },
   "author": "",
   "license": "ISC",
@@ -12,5 +14,11 @@
     "code": "^4.0.0",
     "lab": "^12.1.0",
     "semistandard": "^9.2.1"
+  },
+  "dependencies": {
+    "nodemon": "^1.11.0",
+    "read-stream": "^2.1.1",
+    "stream-array": "^1.1.2",
+    "write-stream": "^0.4.3"
   }
 }
