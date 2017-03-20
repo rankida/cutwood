@@ -11,14 +11,13 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "code": "^4.0.0",
-    "lab": "^12.1.0",
-    "semistandard": "^9.2.1"
+    "code": "4.x.x",
+    "lab": "12.x.x",
+    "nodemon": "1.x.x",
+    "semistandard": "9.x.x"
   },
   "dependencies": {
-    "nodemon": "^1.11.0",
-    "read-stream": "^2.1.1",
-    "stream-array": "^1.1.2",
-    "write-stream": "^0.4.3"
+    "read-stream": "2.x.x",
+    "write-stream": "0.x.x"
   }
 }
