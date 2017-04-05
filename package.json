@@ -17,6 +17,7 @@
     "semistandard": "9.x.x"
   },
   "dependencies": {
+    "rc": "1.2.x",
     "read-stream": "2.x.x",
     "write-stream": "0.x.x"
   }

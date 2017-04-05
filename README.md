@@ -9,6 +9,18 @@ Under development - not usable
 2. Parse historic dense unintelligible log files into searchable form
 3. Using the parse logs, easily find via the cli a line of logging that is of interest
 
+## Current Usage
+**This is under development and is likely to change**
+Instal globally
+```
+npm install -g cutwood
+```
+Then pipe into it
+```
+ping www.rankida.com | cutwood
+```
+by default it will just echo what you give it, but more coming soon!
+
 ## Implementation thoughts
 There are a few stages
 ```
