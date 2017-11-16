@@ -1,0 +1,66 @@
+
+> @mckinsey/wave-services@26.14.1 start /Users/rankida/Projects/nearform/wave2/services
+> wave-service -s this
+
+{"event":"log","timestamp":1491904160972,"tags":["instance","starting","this"],"pid":7568}
+{"event":"log","timestamp":1491904160999,"tags":["database","connected"],"pid":7568}
+{"event":"log","timestamp":1491904161362,"tags":["tree","loading"],"pid":7568}
+{"event":"log","timestamp":1491904166845,"tags":["finish","tree","load"],"data":null,"pid":7568}
+{"event":"log","timestamp":1491904166846,"tags":["instance","started","this"],"pid":7568}
+{"event":"request","timestamp":1491904168092,"tags":["info"],"data":"post /user-management/users {}","pid":7568,"id":"1491904168064:David-Rankins-MacBook-Pro.local:7568:j1dd7tmj:10000","method":"post","path":"/user-management/users","config":{}}
+{"event":"response","timestamp":1491904168064,"id":"1491904168064:David-Rankins-MacBook-Pro.local:7568:j1dd7tmj:10000","instance":"http://David-Rankins-MacBook-Pro.local:8005","labels":["maintenance"],"method":"post","path":"/user-management/users","query":{},"responseTime":1861,"responseSentTime":1857,"statusCode":200,"pid":7568,"httpVersion":"1.1","source":{"remoteAddress":"127.0.0.1","userAgent":"curl/7.43.0"},"route":"/user-management/users","log":[],"config":{}}
+{"event":"ops","timestamp":1491904221357,"host":"David-Rankins-MacBook-Pro.local","pid":7568,"os":{"load":[1.9814453125,2.162109375,1.93603515625],"mem":{"total":8589934592,"free":167870464},"uptime":6627},"proc":{"uptime":63.89,"mem":{"rss":305934336,"heapTotal":265986048,"heapUsed":229444048},"delay":2.2370629999786615},"load":{"requests":{"8005":{"total":1,"disconnects":0,"statusCodes":{"200":1}}},"concurrents":{"8000":0,"8005":0},"responseTimes":{"8005":{"avg":1859,"max":1859}},"sockets":{"http":{"total":0},"https":{"total":0}}}}
+{"event":"request","timestamp":1491904234159,"tags":["info"],"data":"post /user-management/users {}","pid":7568,"id":"1491904234151:David-Rankins-MacBook-Pro.local:7568:j1dd7tmj:10001","method":"post","path":"/user-management/users","config":{}}
+{"event":"response","timestamp":1491904234151,"id":"1491904234151:David-Rankins-MacBook-Pro.local:7568:j1dd7tmj:10001","instance":"http://David-Rankins-MacBook-Pro.local:8005","labels":["maintenance"],"method":"post","path":"/user-management/users","query":{},"responseTime":2752,"responseSentTime":2750,"statusCode":200,"pid":7568,"httpVersion":"1.1","source":{"remoteAddress":"127.0.0.1","userAgent":"curl/7.43.0"},"route":"/user-management/users","log":[],"config":{}}
+{"event":"ops","timestamp":1491904281364,"host":"David-Rankins-MacBook-Pro.local","pid":7568,"os":{"load":[1.79931640625,2.0732421875,1.91357421875],"mem":{"total":8589934592,"free":136404992},"uptime":6687},"proc":{"uptime":123.898,"mem":{"rss":237854720,"heapTotal":199929856,"heapUsed":143779560},"delay":0.6711820000782609},"load":{"requests":{"8005":{"total":1,"disconnects":0,"statusCodes":{"200":1}}},"concurrents":{"8000":0,"8005":0},"responseTimes":{"8005":{"avg":2751,"max":2751}},"sockets":{"http":{"total":0},"https":{"total":0}}}}
+{"event":"ops","timestamp":1491904341370,"host":"David-Rankins-MacBook-Pro.local","pid":7568,"os":{"load":[1.6787109375,2.00634765625,1.89892578125],"mem":{"total":8589934592,"free":167407616},"uptime":6747},"proc":{"uptime":183.904,"mem":{"rss":238239744,"heapTotal":199929856,"heapUsed":143885264},"delay":0.35376600082963705},"load":{"requests":{"8005":{"total":0,"disconnects":0,"statusCodes":{}}},"concurrents":{"8000":0,"8005":0},"responseTimes":{"8005":{"avg":null,"max":0}},"sockets":{"http":{"total":0},"https":{"total":0}}}}
+{"event":"request","timestamp":1491904355190,"tags":["info"],"data":"post /user-management/users {}","pid":7568,"id":"1491904355178:David-Rankins-MacBook-Pro.local:7568:j1dd7tmj:10002","method":"post","path":"/user-management/users","config":{}}
+{"event":"request","timestamp":1491904356909,"tags":["error","user-management-create-user"],"data":{"stringifyable":{"name":"Error","stack":"Error: A user with the specified email address already exists in wave2, but with a different id.\n    at Object.internals.ensureWaveUser (/Users/rankida/Projects/nearform/wave2/user-management-api/lib/create-user.js:33:25)\n    at internals.ensureAuth0User (/Users/rankida/Projects/nearform/wave2/user-management-api/lib/create-user.js:91:19)\n    at auth0.createUser (/Users/rankida/Projects/nearform/wave2/user-management-api/lib/create-user.js:24:16)\n    at wreck.post (/Users/rankida/Projects/nearform/wave2/user-management-api/node_modules/@mckinsey/wave-auth0/lib/user.js:52:9)\n    at read (/Users/rankida/Projects/nearform/wave2/user-management-api/node_modules/wreck/lib/index.js:523:20)\n    at finish (/Users/rankida/Projects/nearform/wave2/user-management-api/node_modules/wreck/lib/index.js:369:16)\n    at wrapped (/Users/rankida/Projects/nearform/wave2/user-management-api/node_modules/hoek/lib/index.js:871:20)\n    at onReaderFinish (/Users/rankida/Projects/nearform/wave2/user-management-api/node_modules/wreck/lib/index.js:415:16)\n    at g (events.js:291:16)\n    at emitNone (events.js:91:20)\n    at emit (events.js:185:7)\n    at finishMaybe (_stream_writable.js:515:14)\n    at afterWrite (_stream_writable.js:389:3)\n    at _combinedTickCallback (internal/process/next_tick.js:80:20)\n    at process._tickDomainCallback (internal/process/next_tick.js:122:9)","message":"A user with the specified email address already exists in wave2, but with a different id."}},"pid":7568,"id":"1491904355178:David-Rankins-MacBook-Pro.local:7568:j1dd7tmj:10002","method":"post","path":"/user-management/users","config":{}}
+{"event":"error","timestamp":1491904355178,"id":"1491904355178:David-Rankins-MacBook-Pro.local:7568:j1dd7tmj:10002","url":{"protocol":null,"slashes":null,"auth":null,"host":null,"port":null,"hostname":null,"hash":null,"search":null,"query":{},"pathname":"/user-management/users","path":"/user-management/users","href":"/user-management/users"},"method":"post","pid":7568,"error":{"error":"Error when creating user","stack":"Error: Error when creating user\n    at CreateUser.createUser (/Users/rankida/Projects/nearform/wave2/user-management-api/lib/users.js:163:39)\n    at internals.ensureWaveUser (/Users/rankida/Projects/nearform/wave2/user-management-api/lib/create-user.js:94:24)\n    at Object.internals.ensureWaveUser (/Users/rankida/Projects/nearform/wave2/user-management-api/lib/create-user.js:33:16)\n    at internals.ensureAuth0User (/Users/rankida/Projects/nearform/wave2/user-management-api/lib/create-user.js:91:19)\n    at auth0.createUser (/Users/rankida/Projects/nearform/wave2/user-management-api/lib/create-user.js:24:16)\n    at wreck.post (/Users/rankida/Projects/nearform/wave2/user-management-api/node_modules/@mckinsey/wave-auth0/lib/user.js:52:9)\n    at read (/Users/rankida/Projects/nearform/wave2/user-management-api/node_modules/wreck/lib/index.js:523:20)\n    at finish (/Users/rankida/Projects/nearform/wave2/user-management-api/node_modules/wreck/lib/index.js:369:16)\n    at wrapped (/Users/rankida/Projects/nearform/wave2/user-management-api/node_modules/hoek/lib/index.js:871:20)\n    at onReaderFinish (/Users/rankida/Projects/nearform/wave2/user-management-api/node_modules/wreck/lib/index.js:415:16)\n    at g (events.js:291:16)\n    at emitNone (events.js:91:20)\n    at emit (events.js:185:7)\n    at finishMaybe (_stream_writable.js:515:14)\n    at afterWrite (_stream_writable.js:389:3)\n    at _combinedTickCallback (internal/process/next_tick.js:80:20)\n    at process._tickDomainCallback (internal/process/next_tick.js:122:9)"},"config":{}}
+{"event":"response","timestamp":1491904355178,"id":"1491904355178:David-Rankins-MacBook-Pro.local:7568:j1dd7tmj:10002","instance":"http://David-Rankins-MacBook-Pro.local:8005","labels":["maintenance"],"method":"post","path":"/user-management/users","query":{},"responseTime":1744,"responseSentTime":1739,"statusCode":500,"pid":7568,"httpVersion":"1.1","source":{"remoteAddress":"127.0.0.1","userAgent":"curl/7.43.0"},"route":"/user-management/users","log":[],"config":{}}
+{"event":"ops","timestamp":1491904401377,"host":"David-Rankins-MacBook-Pro.local","pid":7568,"os":{"load":[1.65087890625,1.93994140625,1.88134765625],"mem":{"total":8589934592,"free":161042432},"uptime":6807},"proc":{"uptime":243.91,"mem":{"rss":204615680,"heapTotal":163520512,"heapUsed":144080736},"delay":0.5800360003486276},"load":{"requests":{"8005":{"total":1,"disconnects":0,"statusCodes":{"500":1}}},"concurrents":{"8000":0,"8005":0},"responseTimes":{"8005":{"avg":1743,"max":1743}},"sockets":{"http":{"total":0},"https":{"total":0}}}}
+{"event":"ops","timestamp":1491904461383,"host":"David-Rankins-MacBook-Pro.local","pid":7568,"os":{"load":[1.28515625,1.78173828125,1.8232421875],"mem":{"total":8589934592,"free":91189248},"uptime":6867},"proc":{"uptime":303.916,"mem":{"rss":196653056,"heapTotal":156938240,"heapUsed":132035728},"delay":0.3614610005170107},"load":{"requests":{"8005":{"total":0,"disconnects":0,"statusCodes":{}}},"concurrents":{"8000":0,"8005":0},"responseTimes":{"8005":{"avg":null,"max":0}},"sockets":{"http":{"total":0},"https":{"total":0}}}}
+{"event":"request","timestamp":1491904499973,"tags":["info"],"data":"post /user-management/users {}","pid":7568,"id":"1491904499965:David-Rankins-MacBook-Pro.local:7568:j1dd7tmj:10003","method":"post","path":"/user-management/users","config":{}}
+/Users/rankida/Projects/nearform/wave2/services/node_modules/@mckinsey/wave-core/lib/tree/users.js:77
+                    id: user.id,
+                            ^
+
+TypeError: Cannot read property 'id' of undefined
+    at Object.keys.forEach (/Users/rankida/Projects/nearform/wave2/services/node_modules/@mckinsey/wave-core/lib/tree/users.js:77:29)
+    at Array.forEach (native)
+    at groupIds.forEach (/Users/rankida/Projects/nearform/wave2/services/node_modules/@mckinsey/wave-core/lib/tree/users.js:72:34)
+    at Array.forEach (native)
+    at Object.internals.userAttribute (/Users/rankida/Projects/nearform/wave2/services/node_modules/@mckinsey/wave-core/lib/tree/users.js:69:14)
+    at Object.keys.forEach (/Users/rankida/Projects/nearform/wave2/services/node_modules/@mckinsey/wave-core/lib/tree/users.js:37:27)
+    at Array.forEach (native)
+    at Object.keys.forEach (/Users/rankida/Projects/nearform/wave2/services/node_modules/@mckinsey/wave-core/lib/tree/users.js:33:38)
+    at Array.forEach (native)
+    at Object.exports.populate (/Users/rankida/Projects/nearform/wave2/services/node_modules/@mckinsey/wave-core/lib/tree/users.js:30:36)
+    at server.methods.tree.subscribe (/Users/rankida/Projects/nearform/wave2/services/node_modules/@mckinsey/wave-core/lib/tree/tree.js:247:15)
+    at Immediate.setImmediate (/Users/rankida/Projects/nearform/wave2/services/node_modules/@mckinsey/wave-core/lib/source/source.js:161:32)
+    at runCallback (timers.js:649:20)
+    at tryOnImmediate (timers.js:622:5)
+    at processImmediate [as _immediateCallback] (timers.js:594:5)
+
+npm ERR! Darwin 15.6.0
+npm ERR! argv "/Users/rankida/.nvm/versions/node/v6.9.3/bin/node" "/Users/rankida/.nvm/versions/node/v6.9.3/bin/npm" "start"
+npm ERR! node v6.9.3
+npm ERR! npm  v3.10.10
+npm ERR! code ELIFECYCLE
+npm ERR! @mckinsey/wave-services@26.14.1 start: `wave-service -s this`
+npm ERR! Exit status 1
+npm ERR!
+npm ERR! Failed at the @mckinsey/wave-services@26.14.1 start script 'wave-service -s this'.
+npm ERR! Make sure you have the latest version of node.js and npm installed.
+npm ERR! If you do, this is most likely a problem with the @mckinsey/wave-services package,
+npm ERR! not with npm itself.
+npm ERR! Tell the author that this fails on your system:
+npm ERR!     wave-service -s this
+npm ERR! You can get information on how to open an issue for this project with:
+npm ERR!     npm bugs @mckinsey/wave-services
+npm ERR! Or if that isn't available, you can get their info via:
+npm ERR!     npm owner ls @mckinsey/wave-services
+npm ERR! There is likely additional logging output above.
+
+npm ERR! Please include the following file with any support request:
+npm ERR!     /Users/rankida/Projects/nearform/wave2/services/npm-debug.log

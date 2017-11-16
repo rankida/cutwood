@@ -21,6 +21,13 @@ ping www.rankida.com | cutwood
 ```
 by default it will just echo what you give it, but more coming soon!
 
+A very simple configuration currently under the profile name of `"server"` will strip out any ops logging (like you can get from a [hapijs](https://hapijs.com/) server) and will also colour red any logs with the word _error_ in it.
+
+```
+node ./test/fixtures/server.js | cutwood --profile server
+```
+_This uses a simple test script in `server.js` to generate some logs. Run it without cutwood to see what the original looks like._
+
 ## Implementation thoughts
 There are a few stages
 ```

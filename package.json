@@ -4,8 +4,9 @@
   "description": "Yet another logger",
   "main": "index.js",
   "scripts": {
-    "lint": "semistandard .",
-    "test": "semistandard . && lab --a code",
+    "lint": "semistandard",
+    "pretest": "npm run lint",
+    "test": "lab --a code",
     "test-watch": "nodemon --exec lab --a code"
   },
   "author": "",

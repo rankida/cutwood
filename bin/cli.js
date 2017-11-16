@@ -1,16 +1,14 @@
 #!/usr/bin/env node
 
+const argv = require('yargs').argv;
+
 const profileLoader = require('../lib/profile-loader');
 
-const conf = {};
-const config = require('rc')('cutwood', {
-  profiles: {
-    default: null
-  }
-});
+const config = require('rc')('cutwood', {});
 
-const profileName = config.p || config.profile || (config._.length && config._[0]) || null;
+const profileName = argv.profile || argv.p || config.p || config.profile || null;
 
+console.log('Loading cutwood profile', profileName);
 const profile = profileLoader.load(profileName);
 
 const { CutWood } = require('../lib/cutwood');
